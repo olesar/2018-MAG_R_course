@@ -1,357 +1,402 @@
+
 <!DOCTYPE html>
-
-<html xmlns="http://www.w3.org/1999/xhtml">
-
+<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--><html lang="en"> <!--<![endif]-->
 <head>
 
-<meta charset="utf-8" />
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<meta name="generator" content="pandoc" />
+	<!-- Basic Page Needs
+  ================================================== -->
+	<meta charset="utf-8">
+	<title>Olesar's todo list 2017</title>
 
+	<!-- Mobile Specific
+  ================================================== -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
+	<!-- Favicon
+  ================================================== -->
+	<link rel="icon" href="images/todo.png">
 
-
-<title>Linguistic data: quantitative analysis and visualisation</title>
-
-<script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
-<meta name="viewport" content="width=device-width, initial-scale=1" />
-<link href="site_libs/bootstrap-3.3.5/css/lumen.min.css" rel="stylesheet" />
-<script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
-<script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
-<script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
-<script src="site_libs/navigation-1.1/tabsets.js"></script>
-<link href="site_libs/pagedtable-1.1/css/pagedtable.css" rel="stylesheet" />
-<script src="site_libs/pagedtable-1.1/js/pagedtable.js"></script>
-
-
-
-
-<style type="text/css">
-h1 {
-  font-size: 34px;
-}
-h1.title {
-  font-size: 38px;
-}
-h2 {
-  font-size: 30px;
-}
-h3 {
-  font-size: 24px;
-}
-h4 {
-  font-size: 18px;
-}
-h5 {
-  font-size: 16px;
-}
-h6 {
-  font-size: 12px;
-}
-.table th:not([align]) {
-  text-align: left;
-}
-</style>
-
-
+	<!-- CSS
+  ================================================== -->
+	<link rel="stylesheet" type="text/css"  href="css/style.css">
+	
+	<!-- Web Fonts
+  ================================================== -->
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+	
+	<!-- JS
+  ================================================== -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+	
 </head>
-
 <body>
 
-<style type = "text/css">
-.main-container {
-  max-width: 940px;
-  margin-left: auto;
-  margin-right: auto;
-}
-code {
-  color: inherit;
-  background-color: rgba(0, 0, 0, 0.04);
-}
-img {
-  max-width:100%;
-  height: auto;
-}
-.tabbed-pane {
-  padding-top: 12px;
-}
-button.code-folding-btn:focus {
-  outline: none;
-}
-</style>
+	<!-- Primary Page Layout
+	================================================== -->
+	
+	<!-- Header -->
+	<div id="header">
+	
+		<!-- 960 Container -->
+		<div class="container">
+		
+			<div class="twelve columns">
+			
+				<!-- Menu -->
+				<div id="navigation">
+				  <ul id="nav">
+					<li><a href="#">Задачи 2017</a></li>
+					<li><a href="#Courses">Курсы</a>
+						<ul>
+							<li><a href="#KILI">КИЛИ</a></li>
+							<li><a href="#CxG">CxG</a></li>
+							<li><a href="#DA">Анализ данных</a></li>
+							<li><a href="#PhD">Аспиранты</a></li>
+							<li><a href="#TermPapers">Курсовые и дипломы</a></li>
+						</ul>
+					</li>
+					<li><a href="#Projects">Проекты</a>
+						<ul>
+							<li><a href="#UD">UD</a></li>
+							<li><a href="#Oral">Интонация</a></li>
+							<li><a href="#Dahl">Словарь Даля</a></li>
+							<li><a href="#Dict">В.Словари</a></li>
+							<li><a href="#UP">СемПарсинг</a></li>
+							<li><a href="#OldRus">Старорусский</a></li>
+							<li><a href="#Poetic">ЧС поэзии</a></li>
+							<li><a href="#REALEC">REALEC</a></li>
+							<li><a href="#Plag">Антиплагиат</a></li>
+							<li><a href="#Colloc">Коллокации</a></li>
+						</ul>
+					</li>
+					<li><a href="#Reading">Чтение</a>
+						<ul>
+							<li><a href="#CompLing">Комп линг</a></li>
+							<li><a href="#ML">Маш обуч</a></li>
+							<li><a href="#Theory">Теория</a></li>
+							<li><a href="#Freq">Частотности</a></li>
+						</ul>
+					</li>
+					<li><a href="#Resources">Ресурсы</a>
+						<ul>
+							<li><a href="#Morpho">Морфология</a></li>
+							<li><a href="#DataBases">Базы данных</a></li>
+							<li><a href="#Corpora">Корпуса</a></li>
+							<li><a href="#MOOC">Online курсы</a></li>
+						</ul>
+					</li>
+					<li><a href="#Conf">Конф</a></li>
+					<li><a href="#Hanging">Вечное</a></li>
+				  </ul>
+				</div>	<!-- id="navigation" -->	
+	
+			</div>
+		</div>
+	</div><!-- End Header -->
+	
+	<!-- 960 Container -->
+	<div class="container">
+
+<!--		<div class="twelve columns"> -->
+		
+		    <a href="https://docs.google.com/spreadsheets/d/17FGsFIcjSrWdAN2uwBno9V7f4IjCC7JQMTQ_unxyg2g/edit#gid=1035832139">Расписание жизни olesar</a>
+		     | <a href="https://calendar.google.com">Google calendar</a> | <a href="https://www.hse.ru/staff/olesar">staff/olesar</a> | <a href="https://www.hse.ru/db/adm_login.html?goto=*L2FkbS9lZGl0L2VkaXQuaHRtbD9uZXdwb3J0YWw9MSZjaWQ9MjgzJmlkPTM0NzkyOTI3JmdvdG89^JTJBTDNOMFlXWm1MMjlzWlhOaGNqOWZjajB5TXpFMk9ERTFNRFkzT1Rrd05ESXVNall5TURJJTNE^JTVFJmFkZG9uX25hbWU9ZGVmYXVsdA==^">HSE редактору</a> V60iaM0L | <a href="http://olesar.narod.ru/ru/publications.html">Публикации</a> |
+		     <a href="https://github.com/olesar">GitHub</a>
+
+			<!-- Title -->
+			<h3 class="related-title"><a id="Courses"></a><span>Курсы</span> | <a href="https://www.hse.ru/ba/ling/timetable">Расписание бакалавров</a> | <a href="https://www.hse.ru/ma/ling/timetable">Расписание КЛ</a> | <a href="https://www.hse.ru/ma/tling/timetable">Расписание ЛТОЯ</a> | <a href="https://www.hse.ru/staff/olesar/timetable">Мое расписание</a> </h3>
+
+			<!-- Blog Post - 1/4 Columns -->
+                        <div class="four columns"><div class="item"><div class="item-meta meta-blog"><h4><a id="KILI"></a>КИЛИ</h4>
+                        <span><a href="https://github.com/olesar/hseinstruments">on GitHub</a> | 
+                        <a href="https://docs.google.com/spreadsheets/d/1vyIBFPY5nAbl91wviXXnAwWMMlqieZjW473Kcw3Vr34/edit#gid=281621908">Оценки</a><br>
+                        <a href="https://docs.google.com/spreadsheets/d/1pyBAUsgsRbaNsgzV4eNY1P1sL2fS0Vh8y2_pVUWudzk/edit#gid=0">LiveCorpus-2017 meta</a> <br>
+						<a href="https://docs.google.com/spreadsheets/d/15DYRjTSGv3j4h4ZuO40E3jOqANuS7CfgAbAmcvYI4ZM/edit#gid=1601751595">Анкета 1 курса</a> | Лица группа <a href="https://lingvocodes.github.io/HSEinfo/ba-ling-2017/baling_2017_1.html">1</a> | <a href="https://lingvocodes.github.io/HSEinfo/ba-ling-2017/baling_2017_2.html">2</a> | <a href="https://lingvocodes.github.io/HSEinfo/ba-ling-2017/baling_2017_3.html">3</a> | <a href="https://lingvocodes.github.io/HSEinfo/ba-ling-2017/baling_2017_4.html">4</a><br>
+						<a href="http://hseinstruments.wikispaces.com/">wikispaces 2016</a> | 
+						<a href="https://docs.google.com/spreadsheets/d/1U-LqYULv9D9gh3vzxNzLXFR7puG1k9-OYZ4i5_yZuBs/edit#gid=1710401029">оценки 2016</a></span></div></div></div>
+
+                        <div class="four columns"><div class="item"><div class="item-meta meta-blog"><h4><a id="CxG"></a>Грамматика конструкций</h4>
+                        <span>
+                        <a href="https://github.com/olesar/hsecxg/wiki">Course Wiki</a> | <a href="https://docs.google.com/spreadsheets/d/1NZpxy74G-zVe4TAEbChETg-kmQ_eeHV7XnYWLpHMgBg/edit">Оценки</a><br>
+                        <a href="http://sle2017.eu/downloads/workshops/Advances%20in%20Diachronic%20Construction%20Grammar.pdf">
+                        Diachronic CxG Workshop ICLC 2017<br>
+                        <a href="https://www.researchgate.net/publication/316072095_Towards_a_dynamic_Behavioral_Profile_a_diachronic_study_of_polysemous_%27sentir%27_in_Spanish">Jansegers & Gries. Towards a dynamic Behavioral Profile: a diachronic study of polysemous 'sentir' in Spanish</a></span></div></div></div>
+                                                                                                                                               			
+                        <div class="four columns"><div class="item"><div class="item-meta meta-blog"><h4><a id="DA"></a>Анализ данных</h4>
+                        <span><a href="https://agricolamz.github.io/2017-MAG_R_course/">on GitHub</a> |
+                        <a href="http://hsequantling.wikispaces.com/%D0%94%D0%B0%D0%BD%D0%BD%D1%8B%D0%B5">Данные</a><br>
+                        <a href="file:///Users/a1/Olesar/Statistics/Levshina2015.pdf">Levshina 2015</a> | 
+                        <a href="file:///Users/a1/Olesar/Statistics/">Stats folder</a> <br>
+                        <a href="http://www.sciencedirect.com/science/article/pii/S1532046403000340">Dreiseitl&Ohno-Machado. Logistic regression and artificial neural network classification models: a methodology review</a><br>
+                        <a href="http://debeissat.nicolas.free.fr/svg3d.php">Adding 3D to SVG pictures</a><br>
+                        <a href="https://www.datacamp.com/courses/arima-modeling-with-r">DataCamp: Time Series Data and Models</a></span></div></div></div>
+						
+                        <div class="four columns"><div class="item"><div class="item-meta meta-blog"><h4><a id="PhD"></a>Аспиранты</h4>
+                        <span>Ася Ройтберг<br>
+						Юля Бадрызлова<br>
+                        Надя Буйлова<br>
+                        Даша Кошелева</span></div></div></div>
+						
+                        <div class="four columns"><div class="item"><div class="item-meta meta-blog"><h4><a id="TermPapers"></a>Курсовые и дипломы</h4>
+                        <span>Катя Герасименко<br>
+						<br>
+                        <br>
+                        </span></div></div></div>
+						
+
+<!--		</div> class="twelve columns" -->
+				
+	</div>
+	<!-- /End 960 Container -->
+
+	<!-- 960 Container -->
+	<div class="container">
+
+<!--		<div class="twelve columns"> -->
+		
+			<!-- Title -->
+			<h3 class="related-title"><a id="Projects"></a><span>Проекты</span> <a href="http://hsecompling.wikispaces.com">МагКЛ-2016</a> | <a href="https://docs.google.com/document/d/1T9u93sznczN27GGu9WJmThCexh7XM8iOryQQLLHZDBM/edit?ts=59cebf0b">МагКЛ-2017</a> | <a href="http://masterskie.wikispaces.com">Мастерские 2017</a> | <a href="https://docs.google.com/spreadsheets/d/1QNPLF5D1GoQGHzlzTd4TSl_SBn7UxSOTzyI9zdGaVzk/edit#gid=0">Мастерские на 2018</a> | <a href="#">Up</a> </h3>
+
+			<!-- Blog Post - 1/4 Columns -->
+                        <div class="four columns"><div class="item"><div class="item-meta meta-blog"><h4><a id="UD"></a>UD</h4>
+                        <span><a href="http://universaldependencies.org/">на .org</a> | 
+                        <a href="https://github.com/UniversalDependencies/docs">docs GitHub</a> |
+                        <a href="https://github.com/UniversalDependencies/tools">tools</a> <br>
+                        <a href="https://github.com/UniversalDependencies/UD_Russian-Syntagrus/tree/dev">UD_Russian_Syntagrus</a> | 
+                        <a href="https://github.com/UniversalDependencies/UD_Russian/tree/dev">UD_Russian</a> | 
+                        <a href="https://github.com/UniversalDependencies/UD_Russian-PUD/tree/dev">Russian-PUD</a>
+                        <a href="https://github.com/UniversalDependencies/UD_Belarusian">Belarussian</a> |
+                        <a href="https://github.com/UniversalDependencies/UD_Lithuanian">Lithuanian</a> | 
+                        <a href="https://github.com/UniversalDependencies/UD_Dargwa/tree/dev">Dargwa</a> |
+						<a href="https://docs.google.com/spreadsheets/d/12qgvI96yH1uTG2p2iAyq5rkH0awN3oef7wKkKEIMjjg/edit#gid=0">HSE-Russian Gold Standard</a> | 
+						<a href="">slavic parallel folder</a></span></div></div></div>
+
+                        <div class="four columns"><div class="item"><div class="item-meta meta-blog"><h4><a id="Oral"></a>Интонация</h4>
+                        <span><a href="http://www.exmaralda.org/files/CLARIN_Standards.pdf">CLARIN Multimedia standards</a><br>
+                        <a href="http://parasolcorpus.org/Makhachkala/">ДагРус</a></span></div></div></div>
+
+                        <div class="four columns"><div class="item"><div class="item-meta meta-blog"><h4><a id="Dahl"></a>Словарь Даля</h4>
+                        <span><a href="http://slovari.ru/search.aspx?p=3068">slovari.ru</a> |
+                        <a href="http://www.slovorod.ru/dic-dal/dal-n.htm">slovorod</a> |
+                        <a href="https://books.google.ru/books?id=nVBoCwAAQBAJ&pg=PA270&lpg=PA270&dq=%D0%B1%D0%B5%D1%81%D1%87%D0%B5%D0%BB%D1%8B%D0%B9&source=bl&ots=WjcHQcjSfH&sig=YpddJDTjRphDgrliJPQKTZUapoU&hl=en&sa=X&ved=0ahUKEwiEiI6eidzVAhUhP5oKHfXXCFkQ6AEIPzAD#v=onepage&q=%D0%B2%D1%8F%D0%BD%D1%83%D1%82%D1%8C&f=false">на Google Books</a> |
+                        <a href="https://books.google.com.ua/books?id=2KtiRSUTRMEC&pg=PA803&lpg=PA803&dq=%22%D0%BA%D1%83%D1%82%D0%BB%D0%B0%22+%D1%81%D0%BB%D0%BE%D0%B2%D0%B0%D1%80%D1%8C&source=bl&ots=VnPcrJ6_65&sig=9Eud1UJX6hGkuTLi6yJ1U2OS_V8&hl=en&sa=X&ved=0ahUKEwjAu7iLge7VAhWqK5oKHa_cDscQ6AEIPjAE#v=onepage&q&f=false">+1</a> |
+                        <a href="http://philolog.petrsu.ru/vdahl/projects/slovar/index.php?word_text=%D0%BD%D0%B5+%D0%B2+%D1%82%D0%B2%D0%BE%D1%8E&mode=findfrags">Петрозаводск</a> |
+                        <br><a href="https://ru.wikisource.org/wiki/%D0%A2%D0%A1%D0%94-%D1%81%D0%BB%D0%BE%D0%B2%D0%BD%D0%B8%D0%BA/3/%D0%90">Wikisource.ТСД</a> |
+                        <a href="https://ru.wikisource.org/w/index.php?title=%D0%A1%D1%82%D1%80%D0%B0%D0%BD%D0%B8%D1%86%D0%B0:%D0%A2%D0%BE%D0%BB%D0%BA%D0%BE%D0%B2%D1%8B%D0%B9_%D1%81%D0%BB%D0%BE%D0%B2%D0%B0%D1%80%D1%8C._%D0%A2%D0%BE%D0%BC_1_(%D0%94%D0%B0%D0%BB%D1%8C_1903).djvu/25&action=edit">+edit</span></div></div></div>
+                        
+                        <div class="four columns"><div class="item"><div class="item-meta meta-blog"><h4><a id="Dict"></a>Вышка.Словари</h4>
+                        <span>1<br></span></div></div></div>
+                        
+                        <div class="four columns"><div class="item"><div class="item-meta meta-blog"><h4><a id="UP"></a>СемПарсинг</h4>
+                        <span>1<br>
+                        <a href="https://github.com/System-T/UniversalPropositions">UniversalPropositions</a> |
+                        <a href="http://verbs.colorado.edu/propbank/framesets-english/support-v.html">PropBank framesets</a></span></div></div></div>
+                        
+                        <div class="four columns"><div class="item"><div class="item-meta meta-blog"><h4><a id="OldRus"></a>Старорусский</h4>
+                        <span><a href="http://ru-eval.ru/hist/xi-xvii/02b.html">Словарь 11-17</a> | 
+                        <a href="http://lcph.bashedu.ru/cgi-bin/olddb.py?w=%D1%82%D1%80%D0%B5%D1%82%D0%B8%D1%8F%D0%BA%D1%8A&mod=searchword">+база том Т</a> |
+                        <a href="file:///Users/a1/Olesar/RuEval/www/hist/xi-xvii/19s.html">Буква С</a> |
+                        <a href="https://archive.org/stream/XIXVII.22XVII./%D0%A1%D0%9B%D0%9E%D0%92%D0%90%D0%A0%D0%AC%20%D0%A0%D0%A3%D0%A1%D0%A1%D0%9A%D0%9E%D0%93%D0%9E%20%D0%AF%D0%97%D0%AB%D0%9A%D0%90%20XI~XVII%20%D0%92%D0%92.%20%D0%92%D0%AB%D0%9F%D0%A3%D0%A1%D0%9A%2022%20(%D0%A0%D0%B0%D1%81%D0%BA%D0%B8%D0%B4%D0%B0%D1%82%D0%B8%D1%81%D1%8F-%D0%A0%D1%8F%D1%89%D0%B5%D0%BD%D0%BA%D0%BE)_djvu.txt">+arxiv.org</a> |
+                        <a href="http://dic.feb-web.ru/slavonic/dicgram2/">ЦС Поляков</a><br>
+                        <a href="https://www.google.com.ua/search?client=opera&biw=1021&bih=506&q="братие"+site%3Aru.wikisource.org">поиск по wiksource.ru</a><br>
+                        <a href="http://www.gorazd.org/?q=en/node/21">GORAZD: OCS Digital Hub</a><br>
+                        <a href="https://books.google.ru/books?id=rbbJAAAAQBAJ&pg=PA831&lpg=PA831&dq=%D0%90%D0%9C%D0%91%D0%A3%D0%A0%D0%9A,+%D0%90%D0%9C%D0%91%D0%A3%D0%A0%D0%9E%D0%9A,+%D0%90%D0%9C%D0%91%D0%A3%D0%A0%D0%A5,+%D0%90%D0%9D%D0%91%D0%9E%D0%A0%D0%9A,+%D0%90%D0%9D%D0%91%D0%A3%D0%A0%D0%9E%D0%9A,+%D0%90%D0%9D%D0%91%D0%A3%D0%A0%D0%A5,+%D0%90%D0%91%D0%A3%D0%A0%D0%A5&source=bl&ots=tIZ_h1NKMF&sig=f3QaLBj7593Su_vS6d6ZWuUGNno&hl=en&sa=X&ved=0ahUKEwiCtK3V34bVAhUGtxQKHbGmBIkQ6AEIKDAA#v=onepage&q=%D0%90%D0%9C%D0%91%D0%A3%D0%A0%D0%9A%2C%20%D0%90%D0%9C%D0%91%D0%A3%D0%A0%D0%9E%D0%9A%2C%20%D0%90%D0%9C%D0%91%D0%A3%D0%A0%D0%A5%2C%20%D0%90%D0%9D%D0%91%D0%9E%D0%A0%D0%9A%2C%20%D0%90%D0%9D%D0%91%D0%A3%D0%A0%D0%9E%D0%9A%2C%20%D0%90%D0%9D%D0%91%D0%A3%D0%A0%D0%A5%2C%20%D0%90%D0%91%D0%A3%D0%A0%D0%A5&f=false">А.Молдован. Вести-Куранты</a> <br>
+                        <a href="https://arxiv.org/pdf/1508.06374.pdf">A.Koplenig. A fully data-driven method to identify (correlated) changes in diachronic corpora</a> <br>
+                        <a href="http://ru-eval.ru/hist/lex/lex_oldrus_a.html">Указатель к Древнерусскому корпусу</a>
+                        </span></div></div></div>
+                        
+                        <div class="four columns"><div class="item"><div class="item-meta meta-blog"><h4><a id="REALEC"></a>REALEC</h4>
+                        <span><a href="http://realec-nug.wikispaces.com/">НУГ wikispaces</a> | <a href="http://realec.org/">Corpus</a><br>
+                        <a href="http://www.tufs.ac.jp/ts/personal/corpuskun/pdf/2014/reading002.pdf">Yu.Tono. Learner corpora: design, development and applications</a><br>
+                        <a href="https://books.google.ru/books?id=h4jvexlSum8C&pg=PA43&lpg=PA43&dq=ICLE+tagset&source=bl&ots=yLUMZEGcSN&sig=CwOdC0MSkv7Kk_pL8k-6uH7mAiA&hl=en&sa=X&ved=0ahUKEwjTsI7Vvt_UAhVLblAKHebyBLA4ChDoAQhFMAQ#v=onepage&q=ICLE%20tagset&f=false">ICLE tagset & annotation</a> |
+						<a href="http://etheses.whiterose.ac.uk/9736/1/ALFAIFI_PhD_Thesis.pdf">Arabic Learner Corpus</a></span></div></div></div>
+                        
+                        <div class="four columns"><div class="item"><div class="item-meta meta-blog"><h4><a id="Poetic"></a>ЧС поэзии</h4>
+                        <span><a href="https://docs.google.com/document/d/1UzEKN5RhbYxIYt1ACsihQsAKkqOZ3NEanyT3l68fOHQ/edit">техзадание</a><br>
+                        <span><a href="">(сайт НУГа)</a><br>
+                        <span><a href="">(трибанк)</a><br>
+                        <span><a href="http://ruscorpora.ru/termin-poetic.html">термины НКРЯ</a><br>
+						</span></div></div></div>
+                        
+                        <div class="four columns"><div class="item"><div class="item-meta meta-blog"><h4><a id="Plag"></a>Антиплагиат</h4>
+                        <span><a href="http://www.uni-weimar.de/medien/webis/publications/papers/stein_2010p.pdf">M.Potthast et al. (2010) An Evaluation Framework for Plagiarism Detection</a><br></span></div></div></div>
+                        
+                        <div class="four columns"><div class="item"><div class="item-meta meta-blog"><h4><a id="Colloc"></a>Коллокации</h4>
+                        <span>1<br></span></div></div></div>			
+                        
+                        <div class="four columns"><div class="item"><div class="item-meta meta-blog"><h4><a id="LiveCorpus"></a>LiveCorpus</h4>
+                        <span><a href="https://docs.google.com/spreadsheets/d/18ahOj9NJ8MWtFS14ETbq0GdWK2L0cm3F5e-FVglLB_A/edit#gid=0">LiveCorpus-2014 meta</a><br>
+                        <a href="https://www.dropbox.com/home/CompInstr2015_live/153_Miljaeva">2015 in Dropbox</a></span></div></div></div>			                        			
+
+                        <div class="four columns"><div class="item"><div class="item-meta meta-blog"><h4><a id="Cxn"></a>Constructicon</h4>
+                        <span><a href="/Users/a1/Olesar/Projects/Constructicon">Project Folder</a><br>
+                        <span><a href="https://docs.google.com/spreadsheets/d/1I7QJzD293JRMQ6LM-Ik7eQdMAgIs18juI7vqKM8sBAw/edit?ts=5a4f8838#gid=0">Cx suggestion</a><br>
+                        </span></div></div></div>			                        			
+
+<!--		</div> class="twelve columns" -->
+				
+	</div>
+	<!-- /End 960 Container -->
+
+	<!-- 960 Container -->
+	<div class="container">
+
+<!--		<div class="twelve columns"> -->
+		
+			<!-- Title -->
+			<h3 class="related-title"><a id="Reading"></a><span>Чтение</span> <a href="#">Up</a> </h3>
+
+			<!-- Blog Post - 1/4 Columns -->
+                        <div class="four columns"><div class="item"><div class="item-meta meta-blog"><h4><a id="CompLing"></a>Компьютерная лингвистика</h4>
+                        <span><a href="http://www.earningmyturns.org/2017/06/a-computational-linguistic-farce-in.html">Pereira. A (computational) linguistic farce in three acts</a><br>
+						<a href="https://gist.github.com/karpathy/d4dee566867f8291f086">Karpathy. Minimal character-level language model with a Vanilla Recurrent Neural Network, in Python/numpy</a><br>
+						<a href="http://www.dcs.gla.ac.uk/~anjie/papers/fang_sigir_2016_we.pdf">Fang et al. (2016). Using Word Embedding to Evaluate the Coherence of Topics from Twitter Data</a><br>
+						<a href="http://talukdar.net/papers/nnse_coling12.pdf">Interpretable embeddings</a></span></div></div></div>
+
+                        <div class="four columns"><div class="item"><div class="item-meta meta-blog"><h4><a id="ML"></a>Машинное обучение</h4>
+                        <span>1<br>
+                        <span><a href="http://textvis.lnu.se/">визуализации теста</a><br>
+                        </span></div></div></div>
+                        
+                                                                                                                                               			
+                        <div class="four columns"><div class="item"><div class="item-meta meta-blog"><h4><a id="Theory"></a>Теория</h4>
+                        <span><br></span></div></div></div>
+						
+                        <div class="four columns"><div class="item"><div class="item-meta meta-blog"><h4><a id="Freq"></a>Частотности</h4>
+                        <span><a href="http://bcs.org.uk/upload/pdf/ewic_ir08_michaeloakes.pdf">Statistical Measures for Corpus Profiling (M.Oakes)</a><br>
+                        <a href="https://www.researchgate.net/publication/257218228_The_role_of_entropy_in_word_ranking">Mehri&Darooneh. The role of entropy in word ranking</a><br>
+                        <a href="file:///Users/a1/Downloads/NLDB_Adrian.pdf">Trivergent PPT</a><br>
+                        <a href="https://arxiv.org/pdf/1702.05638.pdf">Potthast et al. (2017) A Stylometric Inquiry into Hyperpartisan and Fake News</a></span></div></div></div>
+						
+<!--		</div> class="twelve columns" -->
+				
+	</div>
+	<!-- /End 960 Container -->
+
+	<!-- 960 Container -->
+	<div class="container">
+
+<!--		<div class="twelve columns"> -->
+		
+			<!-- Title -->
+			<h3 class="related-title"><a id="Resources"></a><span>Ресурсы</span> <a href="https://www.overleaf.com/11216770btxzmzzmqpct#/42313290/">LaTeX-шаблон слайдов</a> | <a href="#">Up</a> </h3>
+
+			<!-- Blog Post - 1/4 Columns -->
+                        <div class="four columns"><div class="item"><div class="item-meta meta-blog"><h4><a id="Morpho"></a>Морфология</h4>
+                        <span><a href="https://github.com/muelletm/cistern/tree/master/marmot">T.Müller. MarMoT</a><br>
+						2</span></div></div></div>
+
+                        <div class="four columns"><div class="item"><div class="item-meta meta-blog"><h4><a id="DataBases"></a>Базы данных</h4>
+                        <span><a href="https://spark.apache.org/">Apache spark</a><br></span></div></div></div>
+                                                                                                                                               			
+                        <div class="four columns"><div class="item"><div class="item-meta meta-blog"><h4><a id="Corpora"></a>Корпуса</h4>
+                        <span><a href="http://unesco.uniba.sk/">Aranea</a> olyalyash o720lga<br></span></div></div></div>
+
+                        <div class="four columns"><div class="item"><div class="item-meta meta-blog"><h4><a id="MOOC"></a>Online курсы</h4>
+                        <span><a href="https://www.datacamp.com/courses/writing-efficient-r-code">DataCamp: Writing Efficient R Code</a><br>
+                        <a href="https://campus.datacamp.com/courses/intro-to-python-for-data-science/">DataCamp: Intro to Python for data science</a></span></div></div></div>
+
+<!--		</div> class="twelve columns" -->
+				
+	</div>
+	<!-- /End 960 Container -->
+
+	<!-- 960 Container -->
+	<div class="container">
+
+<!--		<div class="twelve columns"> -->
+		
+			<!-- Title -->
+			<h3 class="related-title"><a id="Conf"></a><span>Конференции</span> <a href="https://www.overleaf.com">Overleaf</a> | <a href="#">Up</a> </h3>
+
+			<!-- Blog Post - 1/4 Columns -->
+                        <div class="four columns"><div class="item"><div class="item-meta meta-blog"><h4><a id=""></a>ALT 2017</h4>
+                        <span><a href="http://www.dynamicsoflanguage.edu.au/alt-conference-2017/program/">Program</a> | 
+                        <a href="file:///Users/a1/Olesar/Conferences/2017ALT_Australia/">local folder</a> |
+                        <a href="file://localhost/Users/a1/Olesar/Conferences/2017ALT_Australia/TravelPlan.txt">travel plan</a><br>
+                        <a href="http://www.border.gov.au/visas/Pages/600-Visitor.aspx?TermStoreId=1cafda66-8aac-4a45-95fa-3e03872913b6&TermSetId=b8c60187-5f41-48c0-98a2-10cb7f1b0ea2&TermId=9fd6b749-b83c-4501-be3d-8edc77cef82d&AdditionalQuestion1=a%20business%20visit&=true#tab-content-2">AU Visa</a> | 
+						<a href="https://www.google.ru/maps/place/The+Australian+National+University/@-35.2776999,149.1163383,17z/data=!3m1!4b1!4m5!3m4!1s0x6b164d47099a506b:0xf8bb53336f15b050!8m2!3d-35.2776999!4d149.118527">ANU campus Google maps</a> | <a href="https://wikitravel.org/en/Sydney/City_Centre?title=Sydney/City_Centre">Sydney wikitravel</a> |
+						<a href="https://transportnsw.info/trip#/?wSpeed=4&wDuration=20&itMode=walk&routeFilter=time&train&bus&ferry&lightRail&coach&schoolBus=false&accessible=false&arrDep=dep&opalOnly=false&from=10101100&to=10155022">Sydney to Canberra train</a> |
+						<a href="http://wikitravel.org/en/Melbourne#Get_in">Melbourne wikitravel</a> |
+						<a href="https://www.zoo.org.au/melbourne/plan-your-visit/zoo-map">Melbourne Zoo map</a> |
+						<a href="https://www.rome2rio.com/s/Melbourne-Zoo/Melbourne-Airport-MEL">Melbourne Zoo to Airport</a></span></div></div></div>
+
+                        <div class="four columns"><div class="item"><div class="item-meta meta-blog"><h4><a id=""></a>LCR Bolzano</h4>
+                        <span><a href="http://lcr2017.eurac.edu/">LCR 2017</a> | <a href="file:///Users/a1/Olesar/Conferences/2017Bolzano/BolzanoTravelPlan.html">travel plan</a> |
+                        <a href="file:///Users/a1/Olesar/Conferences/2017Bolzano/Bolzano.png">map</a> |
+                        <a href="file:///Users/a1/Olesar/Conferences/2017Bolzano/BolzanoMap.png">Bolzano centrum map</a><br>
+                        <a href="file:///Users/a1/Olesar/Conferences/2017Bolzano/">local folder</a>
+                        </span></div></div></div>
+                                                                                                                                               			
+                        <div class="four columns"><div class="item"><div class="item-meta meta-blog"><h4><a id=""></a>Vienna Jan 25-26</h4>
+                        <span>Corpus-based Research in the Humanities (CRH), <a href="https://www.oeaw.ac.at/ac/crh2/call-for-papers/">CFP</a>, Oct 15<br></span></div></div></div>
+						
+
+<!--		</div> class="twelve columns" -->
+				
+	</div>
+	<!-- /End 960 Container -->
 
 
-<style type="text/css">
-/* padding for bootstrap navbar */
-body {
-  padding-top: 54px;
-  padding-bottom: 40px;
-}
-/* offset scroll position for anchor links (for fixed navbar)  */
-.section h1 {
-  padding-top: 59px;
-  margin-top: -59px;
-}
+	<!-- 960 Container -->
+	<div class="container">
 
-.section h2 {
-  padding-top: 59px;
-  margin-top: -59px;
-}
-.section h3 {
-  padding-top: 59px;
-  margin-top: -59px;
-}
-.section h4 {
-  padding-top: 59px;
-  margin-top: -59px;
-}
-.section h5 {
-  padding-top: 59px;
-  margin-top: -59px;
-}
-.section h6 {
-  padding-top: 59px;
-  margin-top: -59px;
-}
-</style>
+<!--		<div class="twelve columns"> -->
+		
+			<!-- Title -->
+			<h3 class="related-title"><a id="Hanging"></a><span>Вечное</span> <a href="#">Up</a> </h3>
 
-<script>
-// manage active state of menu based on current page
-$(document).ready(function () {
-  // active menu anchor
-  href = window.location.pathname
-  href = href.substr(href.lastIndexOf('/') + 1)
-  if (href === "")
-    href = "index.html";
-  var menuAnchor = $('a[href="' + href + '"]');
+			<!-- Blog Post - 1/4 Columns -->
+                        <div class="four columns"><div class="item"><div class="item-meta meta-blog"><h4>Диссовет</h4>
+                        <span>список всех специальностей<br>
+						4 статьи в квартилях<br>
+						{Летучий, Файер, Слюсарь, Ландер, Ляшевская, Даниэль, Ася, Таня, Роман}<br>
+						какое отношение имееют оппоненты к кафедре и диссертанту<br>
+						<a href="http://www.ijcrsee.com/index.php/ijcrsee">INTERNATIONAL JOURNAL OF COGNITIVE RESEARCH IN SCIENCE, ENGINEERING AND EDUCATION (IJCRSEE)</a>
+						<a href="http://confcognresearch.ru/index.php/committee">Izvestiya SFU. Technicheskie Nauki; Information Technologies & Knowledge</a></span></div></div></div>
 
-  // mark it active
-  menuAnchor.parent().addClass('active');
+                        <div class="four columns"><div class="item"><div class="item-meta meta-blog"><h4>Конструктикон - чистка</h4>
+                        <span>сем. роли<br></span></div></div></div>
+                                                                                                                                               			
+                        <div class="four columns"><div class="item"><div class="item-meta meta-blog"><h4>Боас - билет</h4>
+                        <span>даты, билет<br>
+                        <a href="http://sites.la.utexas.edu/hcb/files/2014/09/Boas-TheoreticalLinguistics-2014-uncorrected-proofs.pdf">
+                        Lexical & phrasal approaches to argument structure</a></span></div></div></div>
+						
+                        <div class="four columns"><div class="item"><div class="item-meta meta-blog"><h4>Маша Нордрум</h4>
+                        <span>квартира<br></span></div></div></div>
+                        
+                        <div class="four columns"><div class="item"><div class="item-meta meta-blog"><h4>Chiara</h4>
+                        <span><a href="https://disk.yandex.ru/client/disk/%D0%9A%D0%BE%D0%BC%D0%BF%D0%BE%D0%B7%D0%B8%D1%82%D1%8B">Я.Диск</a></span></div></div></div>
 
-  // if it's got a parent navbar menu mark it active as well
-  menuAnchor.closest('li.dropdown').addClass('active');
-});
-</script>
+                        <div class="four columns"><div class="item"><div class="item-meta meta-blog"><h4>ФКН</h4>
+                        <span><a href="http://wiki.cs.hse.ru/%D0%A1%D0%BB%D1%83%D0%B6%D0%B5%D0%B1%D0%BD%D0%B0%D1%8F:Form/%D0%9D%D0%BE%D0%B2%D1%8B%D0%B9_%D0%BF%D1%80%D0%BE%D0%B5%D0%BA%D1%82">Проекты ФКН (вики)</a></span></div></div></div>
 
+<!--		</div> class="twelve columns" -->
+				
+	</div>
+	<!-- /End 960 Container -->
 
-<div class="container-fluid main-container">
-
-<!-- tabsets -->
-<script>
-$(document).ready(function () {
-  window.buildTabsets("TOC");
-});
-</script>
-
-<!-- code folding -->
-
-
-
-
-
-
-<div class="navbar navbar-default  navbar-fixed-top" role="navigation">
-  <div class="container">
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-      <a class="navbar-brand" href="index.html"></a>
-    </div>
-    <div id="navbar" class="navbar-collapse collapse">
-      <ul class="nav navbar-nav">
-        <li>
-  <a href="index.html">Home</a>
-</li>
-      </ul>
-      <ul class="nav navbar-nav navbar-right">
-        
-      </ul>
-    </div><!--/.nav-collapse -->
-  </div><!--/.container -->
-</div><!--/.navbar -->
-
-<div class="fluid-row" id="header">
-
-
-
-<h1 class="title toc-ignore">Linguistic data: quantitative analysis and visualisation</h1>
-
-</div>
-
-
-<div id="r-and-rstudio-installation" class="section level3">
-<h3>R and RStudio installation</h3>
-<p><a href="https://www.r-project.org/">R</a>, <a href="https://www.rstudio.com/products/rstudio/download/#download">RStudio</a>, <a href="https://www.rollapp.com/app/rstudio">RStudio online</a>, <a href="http://happygitwithr.com/rstudio-git-github.html">Connecting RStudio и GitHub</a>, <a href="https://www.r-bloggers.com/">R-bloggers</a></p>
-<ul>
-<li>(18.01.2018) <a href="https://agricolamz.github.io/2018-MAG_R_course/Lec_1_Course_description.html">Lec 1: Course description</a></li>
-<li><a href="https://github.com/agricolamz/2018-MAG_R_course/raw/master/projects.pdf">about projects</a></li>
-<li><a href="">assignment grades</a></li>
-</ul>
-</div>
-<div id="introduction-to-r.-types-of-data.-dataframe.-users-functions" class="section level3">
-<h3>1. Introduction to R. Types of data. Dataframe. User’s functions</h3>
-<ul>
-<li>(18.01.2018) <a href="">Lab 1: Base R objects. Simple plots. Simple functions. Base R functions code. User’s functions. Loops. Functions in functions. Default arguments. Optional arguments.</a></li>
-<li><p>(18.01.2018) <a href="">Dataframes. Read and write data. Manipulation with data (R base vs. dplyr)</a></p></li>
-<li><p><a href="">HW-1. Deadline: ..2018</a></p></li>
-</ul>
-</div>
-<div id="visualization." class="section level3">
-<h3>2. Visualization.</h3>
-<ul>
-<li>(.2018) <a href="">Base R vs. ggplot2: 2 variables, 3 variables, many variables</a></li>
-<li>(.2018) <a href="">Lab 2: Data manipulation and visualization</a></li>
-<li>(.2018) RMarkdown</li>
-<li><a href="">HW-2. Deadline: ..2018</a></li>
-</ul>
-</div>
-<div id="descriptive-statistics-a.-confidence-intervals.-t-tests.-p-values.-normality-tests" class="section level3">
-<h3>3. 4. Descriptive statistics A. Confidence intervals. T-tests. P-values. Normality tests</h3>
-<ul>
-<li>(.2018) <a href="">Lecture: Central limit theorem. Confidence intervals</a></li>
-<li>(.2018) Lab 3 and 4: Descriptive statistics, Confidence intervals, T-tests. P-value. Boxplot, errorbar.
-<ul>
-<li><a href="">Assignment</a></li>
-<li>Files from class: <a href="">Lab 3 and 4</a></li>
-</ul></li>
-</ul>
-</div>
-<div id="more-about-t-test-one-tailed-paired-test-power-coehns-d.-mannwhitney-u-test." class="section level3">
-<h3>5. More about t-test: one-tailed, paired, test power, Coehn’s d. Mann–Whitney U-test.</h3>
-<ul>
-<li>(.2018) lecture</li>
-<li>(.2018) <a href="">Lab 5</a>, <a href="">Assignment</a></li>
-</ul>
-</div>
-<div id=".-exact-fisher-test.-correlations" class="section level3">
-<h3>6. χ². Exact Fisher test. Correlations</h3>
-<ul>
-<li>(.2018) lecture</li>
-<li>(.2018) <a href="">Lab 6</a>, <a href="">Assignment</a></li>
-</ul>
-</div>
-<div id="linear-regressions" class="section level3">
-<h3>7. Linear regressions</h3>
-<ul>
-<li>(.2018) lecture</li>
-<li>(.2018) <a href="">Lab 7</a>, <a href="">Assignment</a></li>
-</ul>
-</div>
-<div id="anova-dummy-variables-multiple-linear-regression" class="section level3">
-<h3>8. ANOVA, dummy variables, Multiple linear regression</h3>
-<ul>
-<li>(.2018) <a href="">lecture 8</a></li>
-<li>(.2018) <a href="">Lab 8</a>, <a href="">Assignment</a></li>
-</ul>
-</div>
-<div id="binary-logistic-regressions" class="section level3">
-<h3>9. Binary logistic regressions</h3>
-<ul>
-<li>(.2018) <a href="">lecture 9</a></li>
-<li>(.2018) <a href="">Lab 9</a>, <a href="">Assignment</a></li>
-</ul>
-</div>
-<div id="linear-mixed-effects-models" class="section level3">
-<h3>10. Linear Mixed-effects models</h3>
-<ul>
-<li>(.2018) lecture</li>
-<li>(.2018) <a href="">Lab 10</a>, <a href="">Assignment</a></li>
-</ul>
-</div>
-<div id="decision-trees.-decision-forests" class="section level3">
-<h3>11. Decision trees. Decision forests</h3>
-<ul>
-<li>(.2018) lecture</li>
-<li>(.2018) <a href="">Lab 11 (CART)</a>, <a href="">Assignment</a></li>
-</ul>
-</div>
-<div id="clusterization" class="section level3">
-<h3>12. Clusterization</h3>
-<ul>
-<li>(.2018) lecture</li>
-<li>(.2018) <a href="">Lab 12: Clusterization.</a> <a href="">Assignment link</a></li>
-</ul>
-</div>
-<div id="pca-mca" class="section level3">
-<h3>13. PCA, MCA</h3>
-<ul>
-<li>(.2018) <a href="">lecture 13</a></li>
-<li>(.2018) <a href="">Lab 13: PCA, MCA</a>, <a href="">Assignment link</a></li>
-<li>(.2018) lecture</li>
-<li>(.2018) <a href="">Lab 13: PCA, MCA</a>, <a href="">Assignment link</a></li>
-</ul>
-</div>
-<div id="empirical-bayes" class="section level3">
-<h3>14. Empirical Bayes</h3>
-<ul>
-<li>(.2018) lecture</li>
-<li>(.2018) <a href="">Lab 14</a>, <a href="">Assignment link</a></li>
-</ul>
-</div>
-<div id="statistics-for-hackers" class="section level3">
-<h3>15. Statistics for Hackers</h3>
-<ul>
-<li>(.2018) <a href="">lecture</a></li>
-<li>(.2018) <a href="">Lab 15</a>, <a href="">Assignment link</a></li>
-</ul>
-</div>
-<div id="project-presentation-schedule" class="section level3">
-<h3><a href="">Project presentation schedule</a></h3>
-</div>
-<div id="textbooks" class="section level3">
-<h3>Textbooks</h3>
-<ul>
-<li>Levshina, Natalia. 2015. How to do Linguistics with R. <a href="https://benjamins.com/#catalog/books/z.195/main">Info</a> <a href="https://benjamins.com/sites/z.195/">Companion web site</a>. The e-book is available in HSE library.</li>
-<li>Gries, Stefan Th. 2013. Statistics for Linguistics with R: A Practical Introduction. 2nd ed. Mouton de Gruyter. <a href="https://www.degruyter.com/view/product/203826">Info</a></li>
-<li>Gries, Stefan Th. 2009 (2nd ed.: 2018). Quantitative Corpus Linguistics with R. Routledge. <a href="https://www.routledge.com/Quantitative-Corpus-Linguistics-with-R-A-Practical-Introduction/Gries/p/book/9780415962704">Info</a> <a href="https://www.routledge.com/Quantitative-Corpus-Linguistics-with-R-A-Practical-Introduction-2nd-Edition/Gries/p/book/9781138816275">2nd Edition</a> <a href="http://www.linguistics.ucsb.edu/faculty/stgries/research/qclwr/qclwr.html">Companion page</a></li>
-<li>Baayen, Harald. 2008 (2nd ed.: 2014). Analyzing Linguistic Data: A Practical Introduction to Statistics using R. Cambridge University Press. <a href="http://www.cambridge.org/gb/academic/subjects/languages-linguistics/grammar-and-syntax/analyzing-linguistic-data-practical-introduction-statistics-using-r?format=AR">Info</a> <a href="https://books.google.ru/books?id=UvWkIg5E4foC&amp;printsec=frontcover&amp;source=gbs_ge_summary_r&amp;cad=0#v=onepage&amp;q&amp;f=false">Google books</a></li>
-</ul>
-<p>see also our <a href="https://www.hse.ru/data/2016/09/19/1117082144/program-1549532002-kSLnTng0SN.pdf">Course Program</a></p>
-</div>
-<div id="r-markdown" class="section level3">
-<h3>R Markdown</h3>
-<ul>
-<li><a href="https://www.rstudio.com/wp-content/uploads/2016/03/rmarkdown-cheatsheet-2.0.pdf">R Markdown cheatsheet</a></li>
-<li><a href="http://rmarkdown.rstudio.com/lesson-1.html">Online Introduction to R Markdown</a></li>
-</ul>
-</div>
-
-<br>
-<br>
-<br>
-<br>
-<p> <center> &copy; О. Ляшевская, И. Щуров, Г. Мороз, code on
-<a href="https://github.com/agricolamz/2018-MAG_R_course"> GitHub<img src="https://assets-cdn.github.com/images/modules/logos_page/GitHub-Mark.png"  style="width:30px;height:30px;border:0"> </center></p>
-
-
-
-</div>
-
-<script>
-
-// add bootstrap table styles to pandoc tables
-function bootstrapStylePandocTables() {
-  $('tr.header').parent('thead').parent('table').addClass('table table-condensed');
-}
-$(document).ready(function () {
-  bootstrapStylePandocTables();
-});
-
-
-</script>
-
-<!-- dynamically load mathjax for compatibility with self-contained -->
-<script>
-  (function () {
-    var script = document.createElement("script");
-    script.type = "text/javascript";
-    script.src  = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
-    document.getElementsByTagName("head")[0].appendChild(script);
-  })();
-</script>
-
+		<!--  Footer - Copyright-->
+		<div id="footer_bottom">
+			<!-- 960 Container -->
+			<div class="container">
+				
+				<div class="sixteen columns">
+					<div class="copyright">School of Language Studies, National Research University Higher School of Economics, 2017.</div>
+				</div>
+				
+			</div><!-- End 960 Container -->
+		</div>
+		
+		<!-- Back To Top Button -->
+		<div id="backtotop"><a href="#"></a></div>
+		
+		<!-- Imagebox Build -->
+		<script src="js/imagebox.build.js"></script>
+		
 </body>
 </html>
